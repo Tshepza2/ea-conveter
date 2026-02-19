@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<navigation android:id="@id/mobile_navigation"
+            tradeportea:startDestination="@id/navigation_home" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tradeportea="http://schemas.android.com/apk/res-auto">
+  <fragment android:label="@string/title_home"
+            android:name="com.bellyforex.tradeportea.ui.home.HomeFragment"
+            android:id="@id/navigation_home">
+    <action android:id="@id/action_navigation_home_to_addRobotFragment"
+            tradeportea:destination="@id/addRobotFragment" />
+    <action android:id="@id/action_navigation_home_to_assetsFragment"
+            tradeportea:destination="@id/assetsFragment" />
+  </fragment>
+  <fragment android:label="add_robot_fragment"
+            android:name="com.bellyforex.tradeportea.ui.home.addrobot.AddRobotFragment"
+            android:id="@id/addRobotFragment" />
+  <fragment android:label="assets_fragment"
+            android:name="com.bellyforex.tradeportea.ui.home.assets.AssetsFragment"
+            android:id="@id/assetsFragment">
+    <action android:id="@id/action_assetsFragment_to_editAssetFragment"
+            tradeportea:destination="@id/editAssetFragment" />
+  </fragment>
+  <fragment android:label="fragment_edit_asset"
+            android:name="com.bellyforex.tradeportea.ui.home.assets.edit.EditAssetFragment"
+            android:id="@id/editAssetFragment" />
+  <fragment android:label="fragment_metatrader"
+            android:name="com.bellyforex.tradeportea.ui.metatrader.MetatraderFragment"
+            android:id="@id/navigation_metatrader" />
+</navigation>

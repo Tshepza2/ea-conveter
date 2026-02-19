@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tradeportea="http://schemas.android.com/apk/res-auto">
+  <androidx.cardview.widget.CardView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:backgroundTint="@color/white"
+                        tradeportea:cardCornerRadius="8.0dp"
+                        tradeportea:cardUseCompatPadding="true">
+    <RelativeLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp">
+      <LinearLayout android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dp"
+                    android:layout_marginEnd="30.0dp">
+        <TextView android:textSize="16.0dp"
+                  android:textStyle="bold"
+                  android:textColor="?attr/textColorMuted"
+                  android:gravity="center"
+                  android:id="@id/title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Why is my app crashing every time i press start?" />
+        <TextView android:textSize="16.0dp"
+                  android:textColor="?attr/textColor"
+                  android:id="@id/body"
+                  android:background="?attr/colorPrimary"
+                  android:padding="10.0dp"
+                  android:visibility="gone"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="There are Two possibilities, it is either you need to what so or what so" />
+      </LinearLayout>
+      <ImageView android:id="@id/down_arrow"
+                 android:visibility="visible"
+                 android:layout_width="24.0dp"
+                 android:layout_height="24.0dp"
+                 android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                 android:layout_marginStart="10.0dp"
+                 android:layout_alignParentEnd="true" />
+      <ImageView android:id="@id/up_arrow"
+                 android:visibility="gone"
+                 android:layout_width="24.0dp"
+                 android:layout_height="24.0dp"
+                 android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                 android:layout_marginStart="10.0dp"
+                 android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+</RelativeLayout>
